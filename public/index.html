@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Nexgen</title>
+	<link rel="icon" href="assets/images/favicon.ico">
+	<link rel="stylesheet" href="styles.css">
+
+	<link href="https://fonts.cdnfonts.com/css/beatrice-display-trial" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet">
+
+	<link
+		href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Platypi:ital,wght@0,300..800;1,300..800&family=Sedan:ital@0;1&display=swap"
+		rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet">
+
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+	<script src="script.js" defer></script>
+</head>
+
+<body class="overflow-x-hidden bg-zinc-50">
+
+	<div id="load-animation-bg"
+		class="flex justify-center items-center w-screen h-screen bg-slate-100 fixed top-0 left-0 right-0 bottom-0 z-50">
+
+		<div class="inline-block relative select-none">
+			<div id="load-animation-text"
+				class="absoulte font-logo font-bold overflow-hidden pb-20 leading-10 text-center">
+				<p class="lg:text-9xl md:text-6xl text-6xl">
+					ne<span class="text-cyan-400">x</span>gen
+				</p>
+			</div>
+
+			<div id="load-animation-dot"
+				class="bg-black lg:w-6 lg:h-6 md:w-4 md:h-4 w-4 h-4 text-center font-logo absolute lg:top-1/3 md:top-8 top-8 rounded-full">
+			</div>
+
+		</div>
+		<p class=" absolute bottom-10 left-10 text-xs">
+			THE FUTURE OF EDUCATION 4.0
+		</p>
+	</div>
+
+	<header class="fixed top-0 left-0 right-0 z-40">
+		<div class="lg:py-4 lg:px-10 py-4">
+			<nav class="">
+				<div class="flex flex-wrap items-center justify-between mx-auto p-4">
+					<a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
+						<img src="assets/images/logo.png" class="h-8" alt="Flowbite Logo" />
+						<span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"></span>
+					</a>
+					<button data-collapse-toggle="navbar-default" type="button"
+						class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-black rounded-lg md:hidden hover:bg-gray-10"
+						aria-controls="navbar-default" aria-expanded="false">
+						<span class="sr-only">Open main menu</span>
+						<svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+							viewBox="0 0 17 14">
+							<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+								d="M1 1h15M5 7h15M9 13h15" />
+						</svg>
+					</button>
+					<div class="hidden w-full md:block md:w-auto" id="navbar-default">
+						<ul
+							class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-transparent bg-gray-800">
+							<li>
+								<a href="#"
+									class="block p-2 hover:text-cyan-400 text-white md:text-black transition duration-300 rounded md:bg-transparent"
+									aria-current="page">home</a>
+							</li>
+							<li>
+								<a href="#"
+									class="block p-2 hover:text-cyan-400 text-white md:text-black transition duration-300 rounded md:bg-transparent"
+									aria-current="page">courses</a>
+							</li>
+							<li>
+								<a href="#"
+									class="block p-2 hover:text-cyan-400 text-white md:text-black transition duration-300 rounded md:bg-transparent"
+									aria-current="page">ai education</a>
+							</li>
+							<li>
+								<a href="#"
+									class="block p-2 hover:text-cyan-400 text-white md:text-black transition duration-300 rounded md:bg-transparent"
+									aria-current="page">about us</a>
+							</li>
+							<li>
+								<a href="#"
+									class="block p-2 underline hover:text-cyan-400 text-white md:text-black transition duration-300 rounded md:bg-transparent"
+									aria-current="page">book a demo</a>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<main>
+		<section id="hero" class="flex items-center justify-center h-screen bg-zinc-50 overflow-x-hidden snap-end">
+			<h1
+				class="text-center font-bigTitleCleanText headline-big flex flex-col gap-12 font-medium justify-center items-center w-full max-w-12/18 mx-auto headline-big image-trail-text relative lg:text-8xl md:text-6xl text-4xl select-none">
+				<span>UAE's 1st AI-Powered</span>
+				<span>Industry 4.0</span>
+				<span>Tech Education Platform</span>
+			</h1>
+		</section>
+		<section id="industry" class="flex flex-col justify-center my-24 bg-zinc-50 snap-end">
+			<div class="slidein text-container-wide font-fancyText flex text-3xl text-center italic justify-around">
+				Introducing NEXGEN’s
+			</div>
+			<div class="slidein flex flex-col w-screen py-1">
+				<div class="mission md:py-30 md:px-10 flex flex-col items-center text-center pb-6">
+					<h2 class="font-bigTitleCleanText variable-fontsize-big mb-8 font-semibold border-gray-300 border w-full">Industry
+						4.0
+						Ecosystem
+					</h2>
+					<!-- <p class="text-base font-bigTitleCleanText font-bold text-gray-500 uppercase mb-4">The Future of
+						Education</p> -->
+					<p class="mx-5 max-w-screen-xl text-2xl font-bigTitleCleanText">We Empower Schools to Become leaders
+						in
+						Career-Ready Education, by
+						<br class="hidden xl:block">Providing Students with a pathway to apply
+						their classroom learning
+						<br class="hidden xl:block">to real-world impact through our Ecosystem
+						of Industry 4.0 Courses,
+						<br class="hidden xl:block">Student Development Initiatives, and
+						Direct Industry Partnerships
+					</p>
+				</div>
+		</section>
+		<section id="about" class="relative flex flex-col justify-center bg-zinc-50 snap-end">
+			<div class="slidein text-container font-fancyText flex text-3xl text-center italic p-6 justify-around">
+				We Empower Progressive K12 Schools to Elevate Their Students' Career Preparedness and Entrepreneur
+				Growth Through
+			</div>
+
+			<div class="md:block hidden about-images absolute w-full h-full top-0 left-0">
+				<div class="courses one"><img class="object-cover w-full" src="assets/images/courses1.jpg" /></div>
+				<div class="courses two"><img class="object-cover w-full" src="assets/images/courses2.jpg" /></div>
+				<div class="courses three"><img class="object-cover w-full" src="assets/images/courses3.jpg" /></div>
+				<div class="courses four"><img class="object-cover w-full" src="assets/images/courses4.jpg" /></div>
+
+				<div class="initiatives one"><img class="object-cover w-full" src="assets/images/initiatives1.jpg" />
+				</div>
+				<div class="initiatives two"><img class="object-cover w-full" src="assets/images/initiatives2.jpg" />
+				</div>
+				<div class="initiatives three"><img class="object-cover w-full" src="assets/images/initiatives3.jpg" />
+				</div>
+				<div class="initiatives four"><img class="object-cover w-full" src="assets/images/initiatives4.jpg" />
+				</div>
+
+				<div class="industry one"><img class="object-cover w-full" src="assets/images/industry1.jpg" /></div>
+				<div class="industry two"><img class="object-cover w-full" src="assets/images/industry2.jpg" /></div>
+				<div class="industry three"><img class="object-cover w-full" src="assets/images/industry3.jpg" /></div>
+				<div class="industry four"><img class="object-cover w-full" src="assets/images/industry4.jpg" /></div>
+			</div>
+
+			<div class="flex md:flex-row flex-col w-screen border-gray-300 border py-1 z-10">
+				<div
+					class="font-bigTitleCleanText about courses md:py-44 md:px-10 flex-1 text-center border-gray-300 border py-2 ">
+					<h2 class="variable-fontsize-big">Courses</h2>
+					<p class="text-base font-bold text-gray-500">Industry 4.0 Tech Education</p>
+					<p class="text-base font-bold text-gray-500">Animated Lessons, Live Sessions,</p>
+					<p class="text-base font-bold text-gray-500">Hands-on Project-Based Learning</p>
+					<p class="text-base font-bold text-gray-500">Multiple Tech Courses e.g. Data Analytics,</p>
+					<p class="text-base font-bold text-gray-500">Internet of Things & more</p>
+				</div>
+				<div
+					class="font-bigTitleCleanText about initiatives md:py-44 md:px-10 flex-1 text-center border-gray-300 border py-2">
+					<h2 class="variable-fontsize-big">Initiatives</h2>
+					<p class="text-base font-bold text-gray-500">Hackathons, Workshops,</p>
+					<p class="text-base font-bold text-gray-500">Mentorships, Competitions,</p>
+					<p class="text-base font-bold text-gray-500">Networking events & more</p>
+				</div>
+				<div
+					class="font-bigTitleCleanText about industry md:py-44 md:px-10 flex-1 text-center border-gray-300 border py-2">
+					<h2 class=" variable-fontsize-big">Industry</h2>
+					<p class="text-base font-bold text-gray-500">Internships, Start-up Incubators,</p>
+					<p class="text-base font-bold text-gray-500">Expert Lectures, Industry Mentors</p>
+					<p class="text-base font-bold text-gray-500">Industry Visits, Career Guidance & more</p>
+				</div>
+			</div>
+			</div>
+			<div class="slidein font-fancyText flex text-3xl text-center italic p-8 justify-around border-gray-300 border">
+				NEXGEN's Ecosystem Bridging Education 4.0 to Industry 4.0
+			</div>
+
+		</section>
+		<section id="mission" class="flex flex-col justify-center my-24 bg-zinc-50 snap-end">
+			<div class="slidein text-container-wide font-fancyText flex text-3xl text-center italic justify-around">
+				Our Mission: leading AI Transformation of Education To:
+			</div>
+			<div class="slidein flex flex-col w-screen py-1">
+				<div class="mission md:py-30 md:px-10 flex-1 text-center pb-6">
+					<h2 class="font-bigTitleCleanText variable-fontsize-big-2 mb-8 border-gray-300 border">Education 4.0
+					</h2>
+					<p class="text-base font-bigTitleCleanText font-bold text-gray-500 uppercase mb-4">The Future of
+						Education<br class="hidden xl:block">
+					<p class="text-container text-2xl font-bigTitleCleanText">
+						Education 4.0: The Global Transformation of Education for the Fourth
+						<br class="hidden xl:block">
+						Industrial Revolution Driven by the Ground-breaking Advancements
+						<br class="hidden xl:block">
+						Made in AI Technology,
+						<br class="hidden xl:block">
+						NEXGEN academy is leading the World’s Educational Institutions
+						<br class="hidden xl:block">
+						Adoption of AI-Powered Education 4.0
+					</p>
+				</div>
+				<div class="slidein flex justify-center">
+					<video src="assets/videos/about_video.mp4" class="text-container" controls></video>
+				</div>
+		</section>
+		<section id="ai" class="flex items-center justify-center h-screen bg-white snap-end">
+			<div class="slidein relative flex flex-col items-center">
+				<h2 class="variable-fontsize-medium font-bigTitleCleanText mb-4 z-10">Artificial
+					Intelligence is at the core</h2>
+				<h2 class="variable-fontsize-medium font-bigTitleCleanText font-bold z-10">of the
+					Education 4.0 Transformation</h2>
+				<video src="assets/videos/ai.mp4" alt="Video"
+					class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 mb-8 mix-blend-multiply"
+					autoplay loop muted></video>
+			</div>
+		</section>
+		<section id="flowchart" class="flex flex-col justify-center my-24 bg-zinc-50 snap-end">
+			<div class="slidein text-container-wide font-fancyText font-bold flex text-3xl text-center italic justify-around ">
+				Why AI will Transform Education Into Education 4.0
+			</div>
+			<div class="flex justify-center my-12 z-10">
+				<svg width="900" viewBox="0 0 545 318" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<rect x="212" y="155" width="117" height="58" rx="29" fill="#EBCFE0" fill-opacity="0.7"
+						stroke="black" stroke-opacity="0.27" stroke-width="2" />
+					<text fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12"
+						letter-spacing="0em">
+						<tspan x="227.365" y="180.864">AI Personalised&#10;</tspan>
+						<tspan x="246.42" y="195.864">Learning</tspan>
+					</text>
+					<rect x="93" y="104" width="171" height="29" rx="14" fill="#F5CA5B" fill-opacity="0.27"
+						stroke="black" stroke-opacity="0.27" stroke-width="2" />
+					<text fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12"
+						letter-spacing="0em">
+						<tspan x="104.25" y="121.864">AI Recommended learning</tspan>
+					</text>
+					<rect width="171" height="29" rx="14" transform="matrix(-1 0 0 1 452 104)" fill="#F5CA5B"
+						fill-opacity="0.27" stroke="black" stroke-opacity="0.27" stroke-width="2" />
+					<text fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12"
+						letter-spacing="0em">
+						<tspan x="319.232" y="121.864">AI Quiz Generator</tspan>
+					</text>
+					<rect x="149" y="1" width="117" height="44" rx="14" fill="#F5EF5B" fill-opacity="0.27"
+						stroke="black" stroke-opacity="0.27" stroke-width="2" />
+					<text fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12"
+						letter-spacing="0em">
+						<tspan x="163.365" y="18.8636">AI Personalised </tspan>
+						<tspan x="155.238" y="33.8636">learning pathways</tspan>
+					</text>
+					<rect width="117" height="44" rx="14" transform="matrix(-1 0 0 1 396 1)" fill="#F5EF5B"
+						fill-opacity="0.27" stroke="black" stroke-opacity="0.27" stroke-width="2" />
+					<text fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12"
+						letter-spacing="0em">
+						<tspan x="298.188" y="26.8636">AI Assessment</tspan>
+					</text>
+					<rect x="90" y="249" width="156" height="27" rx="13.5" fill="#5BECF5" fill-opacity="0.27"
+						stroke="black" stroke-opacity="0.27" stroke-width="2" />
+					<text fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12"
+						letter-spacing="0em">
+						<tspan x="147.798" y="267.377">AI LMS</tspan>
+					</text>
+					<rect x="189" y="290" width="164" height="27" rx="13.5" fill="#9F5BF5" fill-opacity="0.27"
+						stroke="black" stroke-opacity="0.27" stroke-width="2" />
+					<text fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12"
+						letter-spacing="0em">
+						<tspan x="196.188" y="308.864">AI Personalised Tutor 24/7</tspan>
+					</text>
+					<rect width="156.257" height="26.9072" rx="13.4536" transform="matrix(-1 0 0 1 456.257 248)"
+						fill="#5BECF5" fill-opacity="0.27" stroke="black" stroke-opacity="0.27" stroke-width="2" />
+					<text fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12"
+						letter-spacing="0em">
+						<tspan x="310.256" y="265.864">AI Curriculum Generator</tspan>
+					</text>
+					<rect x="1" y="152" width="178" height="29" rx="14" fill="#5B90F5" fill-opacity="0.27"
+						stroke="black" stroke-opacity="0.27" stroke-width="2" />
+					<text fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12"
+						letter-spacing="0em">
+						<tspan x="66.1543" y="170.864">AI Writer</tspan>
+					</text>
+					<rect width="177" height="29.1899" rx="14" transform="matrix(-1 0 0 1 544 152)" fill="#5B90F5"
+						fill-opacity="0.27" stroke="black" stroke-opacity="0.27" stroke-width="2" />
+					<text fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12"
+						letter-spacing="0em">
+						<tspan x="382.463" y="169.864">AI Personalised Feedback</tspan>
+					</text>
+					<rect x="34" y="59" width="143.771" height="28" rx="14" fill="#5BF57D" fill-opacity="0.27"
+						stroke="black" stroke-opacity="0.27" stroke-width="2" />
+					<text fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12"
+						letter-spacing="0em">
+						<tspan x="47.9805" y="74.8636">AI Teacher Assistant</tspan>
+					</text>
+					<rect width="143.771" height="28" rx="14" transform="matrix(-1 0 0 1 512 59)" fill="#5BF57D"
+						fill-opacity="0.27" stroke="black" stroke-opacity="0.27" stroke-width="2" />
+					<text fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12"
+						letter-spacing="0em">
+						<tspan x="378.869" y="77.8636">AI Automated Grading</tspan>
+					</text>
+					<rect x="28" y="198" width="120.861" height="34" rx="14" fill="#FF5E5E" fill-opacity="0.27"
+						stroke="black" stroke-opacity="0.27" stroke-width="2" />
+					<text fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12"
+						letter-spacing="0em">
+						<tspan x="34.9375" y="218.864">AI Course Designer</tspan>
+					</text>
+					<rect width="120.861" height="34" rx="14" transform="matrix(-1 0 0 1 516 197)" fill="#FF5E5E"
+						fill-opacity="0.27" stroke="black" stroke-opacity="0.27" stroke-width="2" />
+					<text fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12"
+						letter-spacing="0em">
+						<tspan x="401.4" y="218.864">AI Rubric Generator</tspan>
+					</text>
+					<path d="M271.5 212.5V289" stroke="black" stroke-opacity="0.27" />
+					<path d="M471 231V252C471 257.523 466.523 262 461 262H457" stroke="black" stroke-opacity="0.27" />
+					<path d="M73 231V252C73 257.523 77.4772 262 83 262H89" stroke="black" stroke-opacity="0.27" />
+					<path d="M530 182V203C530 208.523 525.523 213 520 213H517" stroke="black" stroke-opacity="0.27" />
+					<path d="M14 182V203C14 208.523 18.4772 213 24 213H27" stroke="black" stroke-opacity="0.27" />
+					<path d="M265 118V118C268.314 118 271 120.686 271 124V154" stroke="black" stroke-opacity="0.27" />
+					<path d="M267 22V22C269.761 22 272 24.2386 272 27V154" stroke="black" stroke-opacity="0.27" />
+					<path d="M280 118V118C276.686 118 274 120.686 274 124V154" stroke="black" stroke-opacity="0.27" />
+					<path d="M278 22V22C275.239 22 273 24.2386 273 27V154" stroke="black" stroke-opacity="0.27" />
+					<path d="M330 183V183C333.866 183 337 186.134 337 190V247" stroke="black" stroke-opacity="0.27" />
+					<path d="M211 184V184C207.686 184 205 186.686 205 190V248" stroke="black" stroke-opacity="0.27" />
+					<path d="M396 22H435C440.523 22 445 26.4772 445 32V59" stroke="black" stroke-opacity="0.27" />
+					<path d="M148 22H109C103.477 22 99 26.4772 99 32V59" stroke="black" stroke-opacity="0.27" />
+					<path d="M445.5 88V88C445.5 92.4183 449.082 96 453.5 96H481C486.523 96 491 100.477 491 106V152"
+						stroke="black" stroke-opacity="0.27" />
+					<path d="M98.5 88V88C98.5 92.4183 94.9183 96 90.5 96H63C57.4772 96 53 100.477 53 106V152"
+						stroke="black" stroke-opacity="0.27" />
+				</svg>
+
+
+
+			</div>
+		</section>
+		<section id="services" class="flex flex-col w-full justify-center items-center text-center my-24 bg-zinc-50 snap-end">
+			<p class="slidein text-2xl">Position Your school as the leader in</p>
+			<h2 class="slidein font-bigTitleCleanText variable-fontsize-big font-bold border-gray-300 border mb-4">AI Powered
+				Education</h2>
+			<p class="slidein text-2xl font-bigTitleCleanText container w-full px-4">
+				<br class="hidden xl:block">
+				From Testing to Integrating, we provide K12 Schools with firsthand.
+				<br class="hidden xl:block">
+				Experience of the transformative power of AI in enhancing teaching and
+				<br class="hidden xl:block">
+				learning experiences through our Industry 4.0 Tech Education Programs
+				<br class="hidden xl:block">
+				NEXGEN's collaborative pilot programs enable schools to assess the
+				<br class="hidden xl:block">
+				impact of AI-Powered personalized learning for students, time-saving AI
+				<br class="hidden xl:block">
+				tools and support for Educators and success metrics of Education 4.0
+				<br class="hidden xl:block">
+				pedagogies, providing an evidence-based approach in integrating or
+				<br class="hidden xl:block">
+				adopting AI-powered learning systems to advance your school's
+				<br class="hidden xl:block">
+				education model for the upcoming AI era.
+			</p>
+		</section>
+
+		<section id="about-2" class="relative flex flex-col justify-center bg-zinc-50 snap-end">
+			<div class="slidein text-container font-fancyText flex text-3xl text-center italic p-6 justify-around">
+				NEXGEN is leading the Global Adoption of AI-Powered Education 4.0 across K-12 Schools through:
+			</div>
+
+			<div class="md:block hidden about-2-images absolute w-full h-full top-0 left-0">
+				<div class="test one"><img class="object-cover w-full" src="assets/images/test1.png" /></div>
+				<div class="test two"><img class="object-cover w-full" src="assets/images/test2.jpg" /></div>
+				<div class="test three"><img class="object-cover w-full" src="assets/images/test3.jpg" /></div>
+				<div class="test four"><img class="object-cover w-full" src="assets/images/test4.jpg" /></div>
+
+				<div class="evaluate one"><img class="object-cover w-full" src="assets/images/evaluate1.jpg" />
+				</div>
+				<div class="evaluate two"><img class="object-cover w-full" src="assets/images/evaluate2.png" />
+				</div>
+				<div class="evaluate three"><img class="object-cover w-full" src="assets/images/evaluate3.jpg" />
+				</div>
+				<div class="evaluate four"><img class="object-cover w-full" src="assets/images/evaluate4.png" />
+				</div>
+
+				<div class="adopt one"><img class="object-cover w-full" src="assets/images/adopt1.jpg" /></div>
+				<div class="adopt two"><img class="object-cover w-full" src="assets/images/adopt2.jpg" /></div>
+				<div class="adopt three"><img class="object-cover w-full" src="assets/images/adopt3.jpg" /></div>
+				<div class="adopt four"><img class="object-cover w-full" src="assets/images/adopt4.png" /></div>
+			</div>
+
+			<div class="flex md:flex-row flex-col w-screen border-gray-300 border py-1 z-10">
+				<div
+					class="font-bigTitleCleanText about-2 test md:py-40 md:px-10 flex-1 text-center border-gray-300 border py-2 ">
+					<h2 class="variable-fontsize-big">Test</h2>
+					<p class="text-base font-bold text-gray-500">Experience AI-Powered Education</p>
+					<p class="text-base font-bold text-gray-500">AI Lxp, AI Tutor, AI Assessments</p>
+					<p class="text-base font-bold text-gray-500">AI Feedback, AI Rubric Generator,</p>
+					<p class="text-base font-bold text-gray-500">AI Quiz Generator, AI Teacher Assistant</p>
+					<p class="text-base font-bold text-gray-500">Education 4.0 Pedagogies</p>
+				</div>
+				<div
+					class="font-bigTitleCleanText about-2 evaluate md:py-40 md:px-10 flex-1 text-center border-gray-300 border py-2">
+					<h2 class="variable-fontsize-big">Evaluate</h2>
+					<p class="text-base font-bold text-gray-500">Assess AI Personalized learning &</p>
+					<p class="text-base font-bold text-gray-500">Advanced AI-Driven Features for Students.</p>
+					<p class="text-base font-bold text-gray-500">Analyze AI Support Tools &</p>
+					<p class="text-base font-bold text-gray-500">Teaching Assistants for Educators</p>
+					<p class="text-base font-bold text-gray-500">Measure Education 4.0 Frameworks</p>
+				</div>
+				<div
+					class="font-bigTitleCleanText about-2 adopt md:py-40 md:px-10 flex-1 text-center border-gray-300 border py-2">
+					<h2 class=" variable-fontsize-big">Adopt</h2>
+					<p class="text-base font-bold text-gray-500">Integrate AI into Your LMS Or</p>
+					<p class="text-base font-bold text-gray-500">Adopt Our Complete AI-Powered LXP</p>
+					<p class="text-base font-bold text-gray-500">(AI Learning Experience Platform)</p>
+					<p class="text-base font-bold text-gray-500">with a Dedicated School Mobile App</p>
+					<p class="text-base font-bold text-gray-500">Implement Education 4.0 Principles</p>
+				</div>
+			</div>
+			</div>
+			<div class="slidein font-fancyText flex text-3xl text-center italic m-8 justify-around border-gray-300 border">
+				Join our mission & be at the forefront of the future of education
+			</div>
+		</section>
+
+		<section id="what-we-do" class="bg-zinc-50 snap-end flex flex-col gap-6 justify-center items-center my-24">
+			<h2 class="slidein text-4xl font-bold mb-4 font-bigTitleCleanText">Education 4.0</h2>
+			<div class="max-w-7xl flex md:flex-row flex-col gap-5 md:gap-0 md:items-start items-center w-full h-full">
+				<div class="md:w-1/3 w-3/4 flex-grow-0 text-center px-5">
+					<div class="flex justify-center items-center">
+						<img width="114" height="114"
+							src="https://www.alefeducation.com/wp-content/uploads/2020/04/icon_Platform.svg" alt="">
+					</div>
+					<div class="slidein animated fadeInUp active font-bigTitleCleanText font-bold">AI Personalized learning
+					</div>
+					<div class="slidein animated fadeInUp active font-bigTitleCleanText tracking-wider">
+						<p>AI systems analyze each student’s learning style,
+							strengths, and preferences
+							to create a unique learning pathway
+							with content recommendation
+							tailored to their individual needs
+							making learning suited to the unique
+							abilities of each student
+
+						</p>
+					</div>
+				</div>
+				<div class="md:w-1/3 w-3/4 flex-grow-0 text-center px-5">
+					<div class="flex justify-center items-center">
+						<img width="114" height="114"
+							src="https://www.alefeducation.com/wp-content/uploads/2020/04/icon_Learning-Design-1.svg"
+							alt="">
+					</div>
+					<div class="slidein home-whatwedo__each__title animated fadeInUp active font-bigTitleCleanText font-bold">AI
+						Tutors</div>
+					<div
+						class="slidein home-whatwedo__each__desc animated fadeInUp active font-bigTitleCleanText tracking-wider">
+						<p>Personalized AI tutor available 24/7, offering instant answers,
+							simple explanations, step-by-step guidance, and extra practice.
+							Students enjoy a safe space for natural conversations in
+							multiple languages it’s like an expert guide always by
+							their side. Customize and train your AI tutor with your
+							school's specific data, curriculum, or subjects.
+						</p>
+					</div>
+				</div>
+				<div class="slidein md:w-1/3 w-3/4 flex-grow-0 text-center px-5">
+					<div class="flex justify-center items-center">
+						<img width="114" height="114"
+							src="https://www.alefeducation.com/wp-content/uploads/2020/04/icon_Professional-Services.svg"
+							alt="">
+					</div>
+					<div class="slidein home-whatwedo__each__title animated fadeInUp active font-bigTitleCleanText font-bold">
+						Ai Assessment</div>
+					<div
+						class="slidein home-whatwedo__each__desc animated fadeInUp active font-bigTitleCleanText tracking-wider">
+						<p>Automated grading saves educators time. Students get personalized AI feedback beyond just
+							grades, AI identifies areas to improve, explains incorrect answers,
+							highlights strengths. With AI, assessment becomes a
+							tool for growth. Schools Fully customize AI grading
+							& AI feedback adhering to your school's rubrics and criteria.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="COP28" class="flex justify-center">
+			<div class="flex flex-wrap items-center justify-center max-w-screen-xl">
+				<div class="w-full lg:w-1/2 p-4">
+					<div class="mb-4">
+						<h2 class="slidein text-4xl xl:text-5xl font-bigTitleCleanText mb-2 font-bold tracking-wide">NEXGEN at Cop28</h2>
+						<p class="slidein text-xl font-bigTitleCleanText mb-4 tracking-wide">We are embodiment of
+							Education 4.0 principles, at COP28
+							Greening Education Pavilion,
+							hosted by the UAE Ministry of Education, we showcased our Interdisciplinary Education 4.0
+							Curriculum
+							integrating Industry 4.0 tech education with environmental sustainability. We're not just
+							teaching
+							technology; we're empowering a new generation of eco-innovators to harness the power of
+							Industry 4.0
+							technologies like AI, data analytics, and robotics for the planet's future.</p>
+						<p class="slidein text-xl font-bigTitleCleanText mb-4 tracking-wide">NEXGEN's COP28 Education
+							4.0 exhibit marks a significant milestone in our journey to leading the
+							world's transition to Education 4.0.</p>
+					</div>
+				</div>
+				<div class="slidein w-full lg:w-1/2 p-4">
+					<div class="aspect-w-16 aspect-h-9">
+						<video controls muted autoplay class="w-full h-full">
+							<source src="assets/videos/ai.mp4" type="video/mp4">
+							Your browser does not support the video tag.
+						</video>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="flex items-center justify-between bg-gray-900 text-white p-8">
+			<p class="text-sm">Be Part of the Global Shift to AI-Powered Education 4.0 with NEXGEN</p>
+			<a href="#" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Discover</a>
+		</footer>
+	</main>
+</body>
+
+</html>

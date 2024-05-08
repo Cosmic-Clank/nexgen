@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Your custom styles here */
+
+.variable-fontsize-medium {
+    font-size: 5vw;
+}
+
+.variable-fontsize-small {
+    font-size: 3vw;
+}
+
+.variable-fontsize-big {
+    font-size: 6vw;
+}
+
+.variable-fontsize-big-2 {
+    font-size: 12vw;
+}
+
+.text-container {
+    width: 90%;
+    max-width: 104rem;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    letter-spacing: 2px;
+}
+
+.text-container-wide {
+    width: 95%;
+    max-width: 104rem;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+@media screen and (max-width: 767px) {
+    .text-container {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.about-images>* {
+    overflow: hidden;
+    position: absolute;
+
+    max-width: 300px;
+    width: 20%;
+}
+
+.about-images .one {
+    top: 10%;
+    left: 28%;
+}
+
+.about-images .two {
+    top: 70%;
+    left: 8%;
+}
+
+.about-images .three {
+    top: 70%;
+    left: 75%;
+}
+
+.about-images .four {
+    top: 18%;
+    left: 80%;
+}
+
+.about-2-images>* {
+    overflow: hidden;
+    position: absolute;
+
+    max-width: 300px;
+    width: 20%;
+}
+
+.about-2-images .one {
+    top: 10%;
+    left: 28%;
+}
+
+.about-2-images .two {
+    top: 70%;
+    left: 8%;
+}
+
+.about-2-images .three {
+    top: 70%;
+    left: 75%;
+}
+
+.about-2-images .four {
+    top: 18%;
+    left: 80%;
+}
