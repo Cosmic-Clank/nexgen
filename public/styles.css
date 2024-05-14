@@ -724,6 +724,10 @@ video {
   margin-top: 2.5rem;
 }
 
+.mt-20 {
+  margin-top: 5rem;
+}
+
 .mt-4 {
   margin-top: 1rem;
 }
@@ -990,6 +994,15 @@ video {
   border-color: rgb(156 163 175 / var(--tw-border-opacity));
 }
 
+.border-transparent {
+  border-color: transparent;
+}
+
+.border-b-gray-300 {
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(209 213 219 / var(--tw-border-opacity));
+}
+
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
@@ -1018,11 +1031,6 @@ video {
 .bg-slate-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(241 245 249 / var(--tw-bg-opacity));
-}
-
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .bg-zinc-50 {
@@ -1231,8 +1239,8 @@ video {
   text-decoration-line: underline;
 }
 
-.mix-blend-multiply {
-  mix-blend-mode: multiply;
+.mix-blend-darken {
+  mix-blend-mode: darken;
 }
 
 .transition {
@@ -1263,8 +1271,8 @@ video {
   font-size: 3vw;
 }
 
-.variable-fontsize-big {
-  font-size: 6vw;
+.white-bg {
+  background-color: #f6f8fe;
 }
 
 .variable-fontsize-big-2 {
@@ -1350,6 +1358,66 @@ video {
   left: 80%;
 }
 
+.variable-fontsize-big {
+  font-size: 6vw;
+  font-weight: 700;
+}
+
+.fontlines {
+  border-top: 1px solid #bdd7ee;
+  border-bottom: 1px solid #bdd7ee;
+  height: 3.2vw;
+  position: absolute;
+  top: 3.5vw;
+  left: 0%;
+  right: 0%;
+  z-index: -1;
+}
+
+.fontlines2 {
+  border-top: 1px solid #bdd7ee;
+  border-bottom: 1px solid #bdd7ee;
+  height: 6.3vw;
+  position: absolute;
+  top: 7.1vw;
+  left: 0%;
+  right: 0%;
+  z-index: -1;
+}
+
+.fontlines3 {
+  border-top: 1px solid #bdd7ee;
+  border-bottom: 1px solid #bdd7ee;
+  height: 3.3vw;
+  position: absolute;
+  top: 3.5vw;
+  left: 0%;
+  right: 0%;
+  z-index: -1;
+}
+
+@media screen and (max-width: 767px) {
+  .fontlines {
+    height: 4.4vw;
+    top: 4.6vw;
+  }
+
+  .variable-fontsize-big {
+    font-size: 8vw;
+  }
+
+  .fontlines3 {
+    border-top: 1px solid #bdd7ee;
+    border-bottom: 1px solid #bdd7ee;
+    height: 4.3vw;
+    position: absolute;
+    top: 4.5vw;
+    left: 0%;
+    right: 0%;
+    z-index: -1;
+  }
+}
+
 .hover\:scale-105:hover {
   --tw-scale-x: 1.05;
   --tw-scale-y: 1.05;
@@ -1400,6 +1468,10 @@ video {
 
   .md\:h-4 {
     height: 1rem;
+  }
+
+  .md\:w-1\/2 {
+    width: 50%;
   }
 
   .md\:w-1\/3 {

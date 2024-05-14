@@ -12,8 +12,9 @@
     font-size: 3vw;
 }
 
-.variable-fontsize-big {
-    font-size: 6vw;
+.white-bg {
+    background-color: #f6f8fe;
+
 }
 
 .variable-fontsize-big-2 {
@@ -99,4 +100,62 @@
 .about-2-images .four {
     top: 18%;
     left: 80%;
+}
+
+.variable-fontsize-big {
+    font-size: 6vw;
+    font-weight: 700;
+}
+
+.fontlines {
+    border-top: 1px solid #bdd7ee;
+    border-bottom: 1px solid #bdd7ee;
+    height: 3.2vw;
+    position: absolute;
+    top: 3.5vw;
+    left: 0%;
+    right: 0%;
+    z-index: -1;
+}
+
+.fontlines2 {
+    border-top: 1px solid #bdd7ee;
+    border-bottom: 1px solid #bdd7ee;
+    height: 6.3vw;
+    position: absolute;
+    top: 7.1vw;
+    left: 0%;
+    right: 0%;
+    z-index: -1;
+}
+.fontlines3 {
+    border-top: 1px solid #bdd7ee;
+    border-bottom: 1px solid #bdd7ee;
+    height: 3.3vw;
+    position: absolute;
+    top: 3.5vw;
+    left: 0%;
+    right: 0%;
+    z-index: -1;
+}
+
+@media screen and (max-width: 767px) {
+    .fontlines {
+        height: 4.4vw;
+        top: 4.6vw;
+    }
+    .variable-fontsize-big {
+        font-size: 8vw;
+    }
+    .fontlines3 {
+        border-top: 1px solid #bdd7ee;
+        border-bottom: 1px solid #bdd7ee;
+        height: 4.3vw;
+        position: absolute;
+        top: 4.5vw;
+        left: 0%;
+        right: 0%;
+        z-index: -1;
+    }
+    
 }
