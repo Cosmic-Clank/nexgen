@@ -12,6 +12,10 @@
     font-size: 3vw;
 }
 
+.variable-fontsize-xsmall {
+    font-size: 2vw;
+}
+
 .white-bg {
     background-color: #f6f8fe;
 
@@ -104,7 +108,6 @@
 
 .variable-fontsize-big {
     font-size: 6vw;
-    font-weight: 700;
 }
 
 .fontlines {
@@ -128,6 +131,7 @@
     right: 0%;
     z-index: -1;
 }
+
 .fontlines3 {
     border-top: 1px solid #bdd7ee;
     border-bottom: 1px solid #bdd7ee;
@@ -139,14 +143,27 @@
     z-index: -1;
 }
 
+.variable-fontsize-mid {
+    font-size: 2.5vw;
+}
+
+@media screen and (max-width: 1023px) {
+    .variable-fontsize-mid {
+        font-size: 5.5vw;
+    }
+
+}
+
 @media screen and (max-width: 767px) {
     .fontlines {
         height: 4.4vw;
         top: 4.6vw;
     }
+
     .variable-fontsize-big {
         font-size: 8vw;
     }
+
     .fontlines3 {
         border-top: 1px solid #bdd7ee;
         border-bottom: 1px solid #bdd7ee;
@@ -157,5 +174,5 @@
         right: 0%;
         z-index: -1;
     }
-    
+
 }
