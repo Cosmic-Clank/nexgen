@@ -143,6 +143,17 @@
     z-index: -1;
 }
 
+.fontlines4 {
+    border-top: 1px solid #bdd7ee;
+    border-bottom: 1px solid #bdd7ee;
+    height: 3.2vw;
+    position: absolute;
+    top: 21.5vw;
+    left: 0%;
+    right: 0%;
+    z-index: -1;
+}
+
 .variable-fontsize-mid {
     font-size: 2.5vw;
 }
@@ -175,4 +186,51 @@
         z-index: -1;
     }
 
+    .fontlines4 {
+        border-top: 1px solid #bdd7ee;
+        border-bottom: 1px solid #bdd7ee;
+        height: 4vw;
+        position: absolute;
+        top: 29vw;
+        left: 0%;
+        right: 0%;
+        z-index: -1;
+    }
+}
+
+.parallax-bg {
+    background-image: url('assets/images/nexgenacademy.png');
+    /* Replace with your image URL */
+    background-attachment: fixed;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #0f1412;
+    height: 100vh;
+}
+
+@media screen and (max-width: 767px) {
+    .parallax-bg {
+        background-image: url('assets/images/nexgenacademy-small.png');
+        /* Replace with your image URL */
+        background-attachment: fixed;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: #0f1412;
+        height: 70vh;
+    }
+
+}
+
+.black-bg {
+    background-color: #0f1412;
+}
+
+.purple-bg {
+    background-color: #302c3f;
+}
+
+.ice-blue-text {
+    color: #abb4c7
 }
