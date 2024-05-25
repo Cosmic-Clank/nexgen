@@ -12,6 +12,6 @@ document.querySelectorAll(".slidein").forEach((element) => {
     opacity: 0,
     duration: 1,
     ease: "expo.out",
-    delay: 0,
+    delay: 0.5,
   });
 });

@@ -640,10 +640,6 @@ video {
   left: 8rem;
 }
 
-.left-64 {
-  left: 16rem;
-}
-
 .right-0 {
   right: 0px;
 }
@@ -654,10 +650,6 @@ video {
 
 .top-1\/2 {
   top: 50%;
-}
-
-.top-3\/4 {
-  top: 75%;
 }
 
 .top-8 {
@@ -1403,6 +1395,11 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.blur-md {
+  --tw-blur: blur(12px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
 .transition {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
@@ -1647,6 +1644,26 @@ video {
 
 .ice-blue-text {
   color: #abb4c7
+}
+
+.boujee-text {
+  --bg-size: 400%;
+  --color-one: hsl(186, 100%, 48%);
+  --color-two: hsl(211, 90%, 55%);
+  background: linear-gradient(110deg,
+            var(--color-one),
+            var(--color-two),
+            var(--color-one)) 0 0 / var(--bg-size) 100%;
+  animation: move-bg 10s infinite linear reverse;
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+
+@keyframes move-bg {
+  to {
+    background-position: var(--bg-size) 0;
+  }
 }
 
 .hover\:scale-105:hover {
