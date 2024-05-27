@@ -154,6 +154,17 @@
     z-index: -1;
 }
 
+.fontlines5 {
+    border-top: 1px solid #bdd7ee;
+    border-bottom: 1px solid #bdd7ee;
+    height: 3.2vw;
+    position: absolute;
+    top: 12.5vw;
+    left: 0%;
+    right: 0%;
+    z-index: -1;
+}
+
 .variable-fontsize-mid {
     font-size: 2.5vw;
 }
@@ -192,6 +203,17 @@
         height: 4vw;
         position: absolute;
         top: 29vw;
+        left: 0%;
+        right: 0%;
+        z-index: -1;
+    }
+
+    .fontlines5 {
+        border-top: 1px solid #bdd7ee;
+        border-bottom: 1px solid #bdd7ee;
+        height: 4.4vw;
+        position: absolute;
+        top: 16.6vw;
         left: 0%;
         right: 0%;
         z-index: -1;
@@ -254,4 +276,12 @@
         background-position: var(--bg-size) 0;
     }
 
+}
+
+#activities {
+    background-image: url('assets/images/burjkhalifa.jpg');
+    background-attachment: fixed;
+    background-size: fill;
+    background-position: center;
+    background-repeat: no-repeat;
 }
