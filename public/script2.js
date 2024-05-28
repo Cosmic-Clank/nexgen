@@ -30,6 +30,6 @@ timelines.forEach((timeline, index) => {
     opacity: 0,
     duration: 1,
     ease: "expo.out",
-    delay: 0.5 + index * 0.6,
+    delay: 0.2 + index * 0.2,
   });
 });
