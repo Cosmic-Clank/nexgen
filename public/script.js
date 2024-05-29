@@ -354,3 +354,21 @@ document.querySelectorAll(".slidein").forEach((element) => {
     delay: 0.5,
   });
 });
+
+const timelines = document.querySelectorAll("[id^='timeline-']");
+
+timelines.forEach((timeline, index) => {
+  gsap.from(timeline, {
+    scrollTrigger: {
+      trigger: timeline,
+      start: "top bottom",
+      end: "bottom center",
+      toggleActions: "play none none reverse",
+    },
+    y: 100,
+    opacity: 0,
+    duration: 1,
+    ease: "expo.out",
+    delay: index * 0.2,
+  });
+});
