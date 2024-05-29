@@ -253,20 +253,26 @@
     background-color: #020617;
 }
 
+.off-white-bg {
+    background-color: #f9f9f9;
+
+}
+
 .ice-blue-text {
     color: #abb4c7
 }
 
 .boujee-text {
     --bg-size: 400%;
-    --color-one: hsl(186, 100%, 48%);
-    --color-two: hsl(211, 90%, 55%);
+    --color-one: hsl(186, 100%, 43%);
+    --color-two: hsl(186, 100%, 48%);
+    /* --color-two: hsl(211, 90%, 55%); */
 
     background: linear-gradient(110deg,
             var(--color-one),
             var(--color-two),
             var(--color-one)) 0 0 / var(--bg-size) 100%;
-    animation: move-bg 10s infinite linear reverse;
+    animation: move-bg 30s infinite linear reverse;
     color: transparent;
     background-clip: text;
 }
