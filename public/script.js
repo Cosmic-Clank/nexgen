@@ -355,6 +355,24 @@ document.querySelectorAll(".slidein").forEach((element) => {
   });
 });
 
+const slideups = document.querySelectorAll("[id^='slideup-']");
+
+slideups.forEach((timeline, index) => {
+  gsap.from(timeline, {
+    scrollTrigger: {
+      trigger: timeline,
+      start: "top bottom",
+      end: "bottom center",
+      toggleActions: "play none none reverse",
+    },
+    y: 100,
+    opacity: 0,
+    duration: 1,
+    ease: "expo.out",
+    delay: index * 0.5,
+  });
+});
+
 const timelines = document.querySelectorAll("[id^='timeline-']");
 
 timelines.forEach((timeline, index) => {
@@ -369,6 +387,6 @@ timelines.forEach((timeline, index) => {
     opacity: 0,
     duration: 1,
     ease: "expo.out",
-    delay: index * 0.2,
+    delay: index * 0.5,
   });
 });
