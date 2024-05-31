@@ -9,12 +9,12 @@ gsap.set("h1 span:nth-child(1)", { x: 400, opacity: 0, skewX: -50 });
 gsap.set("h1 span:nth-child(2)", { opacity: 0 });
 gsap.set("h1 span:nth-child(3)", { x: -400, opacity: 0, skewX: 50 });
 
-gsap.set("#load-animation-bg", {
-  width: "0%",
-  opacity: "0",
-  scaleX: "120%",
-  x: -100,
-});
+// gsap.set("#load-animation-bg", {
+//   width: "0%",
+//   opacity: "0",
+//   scaleX: "120%",
+//   x: -100,
+// });
 
 gsap.registerPlugin(ScrollTrigger);
 let generalDuration = 0.5;

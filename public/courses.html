@@ -23,7 +23,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
-    <script src="script2.js" defer></script>
+    <script src="script3.js" defer></script>
 </head>
 
 <body class="overflow-x-hidden bg-white">
@@ -49,22 +49,22 @@
                         <ul
                             class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-transparent bg-gray-800">
                             <li>
-                                <a href="#"
+                                <a href="index.html"
                                     class="block p-2 hover:text-cyan-400 text-white md:text-black transition duration-300 rounded md:bg-transparent"
                                     aria-current="page">home</a>
                             </li>
                             <li>
-                                <a href="#"
+                                <a href="courses.html"
                                     class="block p-2 hover:text-cyan-400 text-white md:text-black transition duration-300 rounded md:bg-transparent"
                                     aria-current="page">courses</a>
                             </li>
                             <li>
-                                <a href="#"
+                                <a href="ai.html"
                                     class="block p-2 hover:text-cyan-400 text-white md:text-black transition duration-300 rounded md:bg-transparent"
                                     aria-current="page">ai education</a>
                             </li>
                             <li>
-                                <a href="#"
+                                <a href="industry.html"
                                     class="block p-2 hover:text-cyan-400 text-white md:text-black transition duration-300 rounded md:bg-transparent"
                                     aria-current="page">about us</a>
                             </li>
@@ -81,9 +81,9 @@
         </div>
     </header>
     <main>
-        <section id="industry" class="slidein flex flex-col h-screen justify-center snap-end">
+        <section id="industry" class="slidein flex flex-col py-36 justify-center snap-end">
             <div
-                class="slidein text-container-wide font-fancyText flex text-4xl md:text-7xl text-center italic justify-around">
+                class="slidein text-container-wide font-fancyText flex text-4xl md:text-7xl text-center justify-around">
                 Education 4.0
             </div>
             <div class="slidein flex flex-col w-screen py-4">
@@ -98,15 +98,15 @@
             </div>
         </section>
 
-        <section class="slidein flex flex-col w-screen py-1">
-            <div class="slidein flex justify-center">
-                <video src="assets/videos/page2_video.mp4" class="text-container" controls></video>
+        <section class="slidein flex flex-col justify-center items-center">
+            <div class="slidein flex justify-center max-w-7xl p-6">
+                <video src="assets/videos/page2_video.mp4" class="" controls></video>
             </div>
         </section>
 
         <section id="progressivemodel" class="flex flex-col justify-center my-24 snap-end">
             <div
-                class="slidein text-container-wide font-fancyText flex text-2xl md:text-3xl text-center italic justify-around">
+                class="slidein text-container-wide font-fancyText flex text-3xl md:text-5xl text-center justify-around">
                 Education 4.0
             </div>
             <div class="slidein flex flex-col w-screen py-1">
@@ -167,69 +167,82 @@
             <div class="container mx-8 flex flex-col justify-center items-center">
                 <div
                     class="slidein flex flex-col justify-center items-center text-center font-bigTitleCleanText gap-8 my-8">
-                    <p class="text-2xl md:text-3xl">NE<span class="text-cyan-400">X</span>GEN Academy</p>
-                    <h2 class="text-3xl md:text-4xl">UAE’s Premier AI-Powered Industry 4.0 Tech Education Platform </h2>
+                    <h2 class="text-3xl md:text-4xl">UAE’s Premier AI-Powered Industry 4.0 Tech Education Platform</h2>
                 </div>
                 <div class="slidein flex flex-col xl:flex-row gap-2 xl:gap-4 border border-gray-300 p-2 m-2 rounded-xl">
                     <div class="flex justify-center items-center text-center gap-2 text-lg font-bold p-2">
-                        <img class="w-6 h-6" src="assets/images/bookicon.svg" alt="">
+                        <img class="w-6 h-6" src="assets/images/algorithm.png" alt="">
                         <p class="text-base">AI-Powered Learning</p>
                     </div>
                     <div class="flex justify-center items-center text-center gap-2 text-lg font-bold p-2">
-                        <img class="w-6 h-6" src="assets/images/ailessons.svg" alt="">
+                        <img class="w-6 h-6" src="assets/images/animation.png" alt="">
                         <p class="text-base">Animated Lessons</p>
                     </div>
                     <div class="flex justify-center items-center text-center gap-2 text-lg font-bold p-2">
-                        <img class="w-6 h-6" src="assets/images/aipowered.svg" alt="">
+                        <img class="w-6 h-6" src="assets/images/video-lecture.png" alt="">
                         <p class="text-base">Practical & live lessons</p>
                     </div>
                     <div class="flex justify-center items-center text-center gap-2 text-lg font-bold p-2">
-                        <img class="w-6 h-6" src="assets/images/aifeedback.svg" alt="">
+                        <img class="w-6 h-6" src="assets/images/computer.png" alt="">
                         <p class="text-base">Workforce tools</p>
                     </div>
                     <div class="flex justify-center items-center text-center gap-2 text-lg font-bold p-2">
-                        <img class="w-6 h-6" src="assets/images/aiassessment.svg" alt="">
+                        <img class="w-6 h-6" src="assets/images/sustainability.png" alt="">
                         <p class="text-base">Cop28 Sustainability</p>
                     </div>
                 </div>
 
                 <div class="flex max-w-6xl flex-col gap-10">
-                    <div class="slidein flex gap-6 my-4 justify-center items-center">
-                        <div class="flex flex-col gap-6 flex-1 font-bigTitleCleanText">
-                            <h2 class="text-2xl font-bold">Experience the New Generation of AI Models Revolutionizing
-                                Education
-                                with Personalized
-                                Learning and Enhanced Learning Outcomes</h2>
-                            <div class="flex gap-4 items-center">
-                                <img class="w-10 h-10" src="assets/images/aiassessment.svg" alt="">
-                                <p class="text-base">AI Assessment – Accurately evaluates a
-                                    student's understanding,
-                                    application, critical
-                                    thinking, creativity, organization and clarity, fostering growth and academic
-                                    progress
+                    <h2 class="slidein text-2xl font-bold pt-8 text-center">Experience the New Generation of AI Models
+                        Revolutionizing
+                        Education
+                        with Personalized
+                        Learning and Enhanced Learning Outcomes</h2>
+                    <div class="slidein flex flex-col gap-6 my-4 justify-center items-center">
+                        <div class="flex flex-col md:flex-row gap-6 flex-1 font-bigTitleCleanText">
+                            <div
+                                class="relative flex flex-1 flex-col gap-4 off-white-bg p-6 rounded-xl shadow-2xl border font-bigTitleCleanText">
+                                <img class="absolute right-5 w-28 h-28 opacity-20"
+                                    src="assets/images/artificial-intellegence-2.png" alt="">
+                                <h3 class="text-2xl font-bold">AI Assessment</h3>
+                                <p class="text-base">The AI model accurately evaluates students' key abilities:
+                                    Understanding, Application, Critical Thinking, Creativity, Organization, and
+                                    Clarity, fostering growth and academic progress
                                 </p>
                             </div>
-                            <div class="flex gap-4 items-center">
-                                <img class="w-10 h-10" src="assets/images/aifeedback.svg" alt="">
-                                <p class="text-base">AI Feedback – Personalized feedback that
-                                    identifies misconceptions, suggests areas to improve, finds knowledge gaps, and
-                                    highlights strengths
+                            <div
+                                class="relative flex flex-1 flex-col gap-4 off-white-bg p-6 rounded-xl shadow-2xl border font-bigTitleCleanText">
+                                <img class="absolute right-5 w-28 h-28 opacity-20" src="assets/images/management-2.png"
+                                    alt="">
+                                <h3 class="text-2xl font-bold">AI Feedback</h3>
+                                <p class="text-base">Provides personalized feedback to students, identifying
+                                    misconceptions, suggesting areas to improve, finding knowledge gaps, and
+                                    highlighting strengths, guiding them with actionable insights for learning growth
                                 </p>
                             </div>
-                            <div class="flex gap-4 items-center">
-                                <img class="w-10 h-10" src="assets/images/aitutors.svg" alt="">
-                                <p class="text-base">AI Tutor – Instant answers, simple
-                                    explanations, step-by-step guidance, examples, intelligent resource recommendations,
-                                    a safe space for conversations in multiple languages
+                        </div>
+                        <div class="flex flex-col md:flex-row gap-6 flex-1 font-bigTitleCleanText">
+                            <div
+                                class="relative flex flex-1 flex-col gap-4 off-white-bg p-6 rounded-xl shadow-2xl border font-bigTitleCleanText">
+                                <img class="absolute right-5 w-28 h-28 opacity-20" src="assets/images/bot-2.png" alt="">
+                                <h3 class="text-2xl font-bold">AI Tutor</h3>
+                                <p class="text-base">Instant answers, simple explanations, step-by-step guidance,
+                                    examples, intelligent resource recommendations, a safe space for conversations in
+                                    multiple languages
                                 </p>
                             </div>
-                            <div class="flex gap-4 items-center">
-                                <img class="w-10 h-10" src="assets/images/ailessons.svg" alt="">
-                                <p class="text-base">AI Virtual Guides – visually captivating and
-                                    engaging lessons, combined with practical videos from industry experts, offering an
-                                    immersive learning experience
+                            <div
+                                class="relative flex flex-1 flex-col gap-4 off-white-bg p-6 rounded-xl shadow-2xl border font-bigTitleCleanText">
+                                <img class="absolute right-5 w-28 h-28 opacity-20" src="assets/images/presentation2.png"
+                                    alt="">
+                                <h3 class="text-2xl font-bold">AI Virtual Guides</h3>
+                                <p class="text-base">Visually captivating and engaging lessons, combined with practical
+                                    videos from industry experts, offering an immersive learning experience
                                 </p>
                             </div>
+                        </div>
+                        <div class="flex gap-6 flex-1 font-bigTitleCleanText">
+
                         </div>
                     </div>
                     <div class="slidein flex md:flex-row my-4 flex-col-reverse gap-6 justify-center items-center">
@@ -335,6 +348,28 @@
             </div>
         </section>
 
+        <section id="cta" class="flex justify-center items-center pt-24 p-8">
+            <div
+                class="flex flex-col lg:flex-row gap-14 lg:gap-40 justify-around items-center p-12 purple-bg rounded-2xl">
+                <div class="flex flex-col justify-center">
+                    <h2 class="text-3xl font-bold text-white">This Summer: Experience the Future of AI-Powered Learning
+                    </h2>
+                    AI-Powered Learning
+                    </h2>
+                    <p class="text-gray-400">Join our AI-powered summer camp and dive into the world of Industry
+                        4.0. Get hands-on with cutting-edge technologies, collaborate on exciting projects, and unleash
+                        your potential for
+                        innovation</p>
+                </div>
+                <div class="flex flex-col justify-censter items-start">
+                    <a href=""
+                        class="bg-blue-500 hover:bg-blue-700 text-white text-center font-bold py-2 px-4 rounded">Join
+                        Now</a>
+                    <img src="assets/images/robot.png" class="w-52 lg:w-96" alt="">
+                </div>
+            </div>
+        </section>
+
         <section id="learningoutcome" class="flex flex-col justify-center my-24 snap-end">
 
             <div class="slidein flex flex-col w-screen py-1">
@@ -365,6 +400,66 @@
             </div>
         </section>
 
+        <section id="timeline" class="flex justify-center items-center my-20">
+            <div class="flex flex-col justify-center items-center">
+                <div class="flex gap-8 flex-col justify-center items-center font-bigTitleCleanText text-center p-8">
+                    <h2 class="text-4xl md:text-5xl font-bold">Career Readiness Oriented Learning<br
+                            class="hidden xl:block">Framework</h2>
+                    <p class="text-xl md:text-2xl mb-8">
+                        Structured Career Development Programs Designed to<br class="hidden xl:block">
+                        Equip Students for the Future of Work in the AI age & Industry 4.0
+                    </p>
+                </div>
+
+                <div class="flex flex-col xl:flex-row justify-center items-center gap-16 xl:gap-6 p-6">
+                    <div id="timeline-1" class="flex justify-center items-center font-bigTitleCleanText">
+                        <div class="relative flex flex-1 gap-4 justify-center items-center flex-col text-center">
+                            <p class="absolute font-extrabold text-9xl bottom-3/4 opacity-40 text-gray-400">01</p>
+                            <img class="w-40 mt-6 z-10" src="assets/images/timeline1.png" alt="">
+                            <h3 class="font-bold text-xl">Essential Digital Literacy</h3>
+                            <p>
+                                Upskilling in vital digital fluency & Industry 4.0 technologies to meet the requirements
+                                of the modern workplace
+                            </p>
+                        </div>
+                    </div>
+                    <div id="timeline-2" class="flex justify-center items-center font-bigTitleCleanText">
+                        <div class="relative flex flex-1 gap-4 justify-center items-center flex-col text-center">
+                            <p class="absolute font-extrabold text-9xl bottom-3/4 opacity-40 text-gray-400">02</p>
+                            <img class="w-40 mt-6 z-10" src="assets/images/timeline2.png" alt="">
+                            <h3 class="font-bold text-xl">Engagement & Growth</h3>
+                            <p>
+                                Developing Career & Entrepreneurial skills through practical, hands-on experiences in
+                                diverse initiatives, e.g., hackathons, competitions, Mentorship programs
+                            </p>
+                        </div>
+                    </div>
+                    <div id="timeline-3" class="flex justify-center items-center font-bigTitleCleanText">
+                        <div class="relative flex flex-1 gap-4 justify-center items-center flex-col text-center">
+                            <p class="absolute font-extrabold text-9xl bottom-3/4 opacity-40 text-gray-400">03</p>
+                            <img class="w-40 mt-6 z-10" src="assets/images/timeline3.png" alt="">
+                            <h3 class="font-bold">Industry Certifications</h3>
+                            <p>
+                                Students apply their acquired knowledge & skills in real-world industry challenges,
+                                gaining practical experience, exposure & Certifications
+                            </p>
+                        </div>
+                    </div>
+                    <div id="timeline-4" class="flex justify-center items-center font-bigTitleCleanText">
+                        <div class="relative flex flex-1 gap-4 justify-center items-center flex-col text-center">
+                            <p class="absolute font-extrabold text-9xl bottom-3/4 opacity-40 text-gray-400">04</p>
+                            <img class="w-40 mt-6 z-10" src="assets/images/timeline4.png" alt="">
+                            <h3 class="font-bold">Future-Ready Professionals</h3>
+                            <p>
+                                Achieving comprehensive career preparedness, equipping students with the confidence,
+                                certifications and skills to succeed in AI-Driven Industry 4.0
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section class="flex justify-center items-center">
             <div class="container mx-8 flex justify-center items-center max-w-6xl flex-col gap-10">
                 <div class="slidein flex lg:flex-row flex-col gap-6 my-4 justify-center items-center">
@@ -381,15 +476,15 @@
                         </div>
                     </div>
                     <div class="flex-1 rounded-xl overflow-hidden shadow-2xl">
-                        <img src="assets/images/courses4.jpg"></video>
+                        <img src="assets/images/studentdevelopmentinitiatives.jpg"></video>
                     </div>
                 </div>
                 <div class="slidein flex lg:flex-row flex-col gap-6 my-4 justify-center items-center">
                     <div class="flex flex-col gap-6 flex-1 font-bigTitleCleanText">
                         <h2 class="text-2xl font-bold">Industry Exposure & Entrepreneurial Growth</h2>
                         <div class="flex flex-col gap-4 items-center">
-                            <p class="text-base">Internships, Industry Certification Programs, Entrepreneurship
-                                Incubators, and Startup Pitch Competitions build business acumen and provide career
+                            <p class="text-base">Internships, Industry Certification Programs, Entrepreneur mentorship
+                                programs, and Startup Pitch Competitions build business acumen and provide career
                                 guidance. Capstone Projects with Companies, Company tours and site visits, Industry
                                 expert guest speakers, Industry-Sponsored Projects & Challenges provide hands-on
                                 training and develop corporate world understanding.
@@ -402,9 +497,18 @@
                         </div>
                     </div>
                     <div class="flex-1 rounded-xl overflow-hidden shadow-2xl">
-                        <img src="assets/images/adopt2.jpg"></video>
+                        <img src="assets/images/industryexposureandentrepreneurialgrowth.jpg"></video>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <section id="cta2" class="flex justify-center items-center pt-20">
+            <div class="flex gap-6 justify-center items-center flex-col">
+                <p class="text-xl text-center">Learn More About Our Industry-Partnered Student Initiatives</p>
+                <a href="industry.html"
+                    class="bg-blue-500 hover:bg-blue-700 text-white text-center font-bold py-2 px-4 rounded">Explore
+                    Initiatives</a>
             </div>
         </section>
 
@@ -550,14 +654,6 @@
                 </div>
             </div>
         </section>
-
-        <footer class="flex flex-col md:flex-row gap-4 justify-between bg-gray-900 text-white p-8">
-            <p class="text-sm">Take the next step towards academic excellence by exploring our Partnered Student
-                Development Initiatives designed to provide hands-on training and entrepreneurial growth to students</p>
-            <a href="page2.html"
-                class="bg-blue-500 hover:bg-blue-700 text-white text-center font-bold py-2 px-4 rounded min-w-32">Learn
-                More</a>
-        </footer>
     </main>
 </body>
 
