@@ -42,3 +42,40 @@ timelines.forEach((timeline, index) => {
     delay: index * 0.2,
   });
 });
+
+const flowchartLines1 = document.querySelectorAll(
+  "[id^='flowchartlinegroup'] [id^='flowchartline1']",
+);
+
+flowchartLines1.forEach((line, index) => {
+  gsap.set(line, {
+    strokeDasharray: 300,
+    strokeDashoffset: 600,
+  });
+
+  gsap.to(line, {
+    strokeDashoffset: 0,
+    repeat: -1,
+    duration: 5,
+    ease: "linear",
+    delay: index * 0.5,
+  });
+});
+const flowchartLines2 = document.querySelectorAll(
+  "[id^='flowchartlinegroup'] [id^='flowchartline2']",
+);
+
+flowchartLines2.forEach((line, index) => {
+  gsap.set(line, {
+    strokeDasharray: 200,
+    strokeDashoffset: 400,
+  });
+
+  gsap.to(line, {
+    strokeDashoffset: 0,
+    repeat: -1,
+    duration: 5,
+    ease: "linear",
+    delay: index * 0.5,
+  });
+});
