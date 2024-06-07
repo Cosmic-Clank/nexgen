@@ -360,24 +360,39 @@ timelines.forEach((timeline, index) => {
   });
 });
 
-gsap.set("#flowchartlinegroup #flowchartline2", {
-  strokeDasharray: 200,
-  strokeDashoffset: 397,
-});
+const flowchartLines1 = document.querySelectorAll(
+  "[id^='flowchartlinegroup'] [id^='flowchartline1']",
+);
 
-gsap.to("#flowchartlinegroup #flowchartline2", {
-  strokeDashoffset: 0,
-  repeat: -1,
-  duration: 5,
-});
+flowchartLines1.forEach((line, index) => {
+  gsap.set(line, {
+    strokeDasharray: 300,
+    strokeDashoffset: 600,
+  });
 
-gsap.set("#flowchartlinegroup #flowchartline1", {
-  strokeDasharray: 300,
-  strokeDashoffset: 397,
+  gsap.to(line, {
+    strokeDashoffset: 0,
+    repeat: -1,
+    duration: 5,
+    ease: "linear",
+    delay: index * 0.5,
+  });
 });
+const flowchartLines2 = document.querySelectorAll(
+  "[id^='flowchartlinegroup'] [id^='flowchartline2']",
+);
 
-gsap.to("#flowchartlinegroup #flowchartline1", {
-  strokeDashoffset: 0,
-  repeat: -1,
-  duration: 5,
+flowchartLines2.forEach((line, index) => {
+  gsap.set(line, {
+    strokeDasharray: 200,
+    strokeDashoffset: 400,
+  });
+
+  gsap.to(line, {
+    strokeDashoffset: 0,
+    repeat: -1,
+    duration: 5,
+    ease: "linear",
+    delay: index * 0.5,
+  });
 });
