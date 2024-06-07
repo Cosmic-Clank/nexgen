@@ -10,12 +10,12 @@ gsap.set("h1 span:nth-child(2)", { opacity: 0 });
 gsap.set("h1 span:nth-child(3)", { x: -400, opacity: 0, skewX: 50 });
 
 // comment the following to disable the starting animation
-gsap.set("#load-animation-bg", {
-  width: "0%",
-  opacity: "0",
-  scaleX: "120%",
-  x: -100,
-});
+// gsap.set("#load-animation-bg", {
+//   width: "0%",
+//   opacity: "0",
+//   scaleX: "120%",
+//   x: -100,
+// });
 
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(MotionPathPlugin);
