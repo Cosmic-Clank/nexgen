@@ -9,14 +9,16 @@ gsap.set("h1 span:nth-child(1)", { x: 400, opacity: 0, skewX: -50 });
 gsap.set("h1 span:nth-child(2)", { opacity: 0 });
 gsap.set("h1 span:nth-child(3)", { x: -400, opacity: 0, skewX: 50 });
 
-// gsap.set("#load-animation-bg", {
-//   width: "0%",
-//   opacity: "0",
-//   scaleX: "120%",
-//   x: -100,
-// });
+// comment the following to disable the starting animation
+gsap.set("#load-animation-bg", {
+  width: "0%",
+  opacity: "0",
+  scaleX: "120%",
+  x: -100,
+});
 
 gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(MotionPathPlugin);
 let generalDuration = 0.5;
 
 let t1 = gsap.timeline({
@@ -306,39 +308,6 @@ about2Adopt.addEventListener("mouseleave", () => {
   revealAdoptImages.play();
 });
 
-const flowchartSection = document.getElementById("flowchart");
-
-const flowchartAnimation = gsap.timeline({
-  scrollTrigger: {
-    trigger: flowchartSection,
-    start: "top center",
-    end: "bottom center",
-    toggleActions: "play none none reverse",
-  },
-});
-
-flowchartAnimation
-  .from("#flowchart svg path", {
-    strokeDashoffset: 500,
-    strokeDasharray: 500,
-    duration: 3,
-    ease: "expo.out",
-  })
-  .from("#flowchart svg rect", {
-    strokeDasharray: 500,
-    strokeDashoffset: 500,
-    fill: "transparent",
-    duration: 3,
-    delay: -1,
-    ease: "expo.out",
-  })
-  .from("#flowchart svg text", {
-    opacity: 0,
-    duration: 1,
-    delay: -0.5,
-    ease: "expo.out",
-  });
-
 document.querySelectorAll(".slidein").forEach((element) => {
   gsap.from(element, {
     scrollTrigger: {
@@ -389,4 +358,26 @@ timelines.forEach((timeline, index) => {
     ease: "expo.out",
     delay: index * 0.5,
   });
+});
+
+gsap.set("#flowchartlinegroup #flowchartline2", {
+  strokeDasharray: 200,
+  strokeDashoffset: 397,
+});
+
+gsap.to("#flowchartlinegroup #flowchartline2", {
+  strokeDashoffset: 0,
+  repeat: -1,
+  duration: 5,
+});
+
+gsap.set("#flowchartlinegroup #flowchartline1", {
+  strokeDasharray: 300,
+  strokeDashoffset: 397,
+});
+
+gsap.to("#flowchartlinegroup #flowchartline1", {
+  strokeDashoffset: 0,
+  repeat: -1,
+  duration: 5,
 });
