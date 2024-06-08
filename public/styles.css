@@ -640,6 +640,10 @@ video {
   bottom: 1.75rem;
 }
 
+.bottom-\[7\.9\%\] {
+  bottom: 7.9%;
+}
+
 .left-0 {
   left: 0px;
 }
@@ -664,6 +668,10 @@ video {
   left: 1rem;
 }
 
+.left-\[80px\] {
+  left: 80px;
+}
+
 .right-0 {
   right: 0px;
 }
@@ -676,8 +684,8 @@ video {
   right: 1.25rem;
 }
 
-.right-\[104px\] {
-  right: 104px;
+.right-\[80px\] {
+  right: 80px;
 }
 
 .top-0 {
@@ -696,128 +704,44 @@ video {
   top: 2rem;
 }
 
-.right-full {
-  right: 100%;
-}
-
-.left-full {
-  left: 100%;
-}
-
-.left-\[88\%\] {
-  left: 88%;
-}
-
-.left-\[90\%\] {
-  left: 90%;
-}
-
-.bottom-\[10\%\] {
-  bottom: 10%;
-}
-
-.bottom-\[6\%\] {
-  bottom: 6%;
-}
-
-.left-\[99\%\] {
-  left: 99%;
-}
-
-.left-\[95\%\] {
-  left: 95%;
-}
-
-.left-\[93\%\] {
-  left: 93%;
-}
-
-.left-\[92\%\] {
-  left: 92%;
-}
-
 .bottom-\[7\%\] {
   bottom: 7%;
 }
 
-.bottom-\[8\%\] {
-  bottom: 8%;
+.bottom-\[10px\] {
+  bottom: 10px;
 }
 
-.bottom-\[8\.5\%\] {
-  bottom: 8.5%;
+.bottom-\[100px\] {
+  bottom: 100px;
 }
 
-.bottom-\[7\.5\%\] {
-  bottom: 7.5%;
+.bottom-\[150px\] {
+  bottom: 150px;
 }
 
-.bottom-\[7\.9\%\] {
-  bottom: 7.9%;
+.bottom-\[50px\] {
+  bottom: 50px;
 }
 
-.right-\[8\%\] {
-  right: 8%;
+.bottom-\[60px\] {
+  bottom: 60px;
 }
 
-.right-\[3\%\] {
-  right: 3%;
+.bottom-\[70px\] {
+  bottom: 70px;
 }
 
-.right-\[6\%\] {
-  right: 6%;
+.bottom-\[65px\] {
+  bottom: 65px;
 }
 
-.right-\[7\%\] {
-  right: 7%;
+.bottom-\[66px\] {
+  bottom: 66px;
 }
 
-.right-\[6\.5\%\] {
-  right: 6.5%;
-}
-
-.left-\[10\%\] {
-  left: 10%;
-}
-
-.left-\[6\.5\%\] {
-  left: 6.5%;
-}
-
-.left-\[6\%\] {
-  left: 6%;
-}
-
-.left-\[5\%\] {
-  left: 5%;
-}
-
-.left-\[4\.9\%\] {
-  left: 4.9%;
-}
-
-.left-\[20px\] {
-  left: 20px;
-}
-
-.left-\[200px\] {
-  left: 200px;
-}
-
-.left-\[100px\] {
-  left: 100px;
-}
-
-.left-\[90px\] {
-  left: 90px;
-}
-
-.left-\[80px\] {
-  left: 80px;
-}
-
-.right-\[80px\] {
-  right: 80px;
+.bottom-\[64px\] {
+  bottom: 64px;
 }
 
 .-z-10 {
@@ -891,16 +815,6 @@ video {
 .my-8 {
   margin-top: 2rem;
   margin-bottom: 2rem;
-}
-
-.mx-20 {
-  margin-left: 5rem;
-  margin-right: 5rem;
-}
-
-.my-16 {
-  margin-top: 4rem;
-  margin-bottom: 4rem;
 }
 
 .-mt-7 {
@@ -1059,10 +973,6 @@ video {
   height: 100vh;
 }
 
-.h-2 {
-  height: 0.5rem;
-}
-
 .min-h-screen {
   min-height: 100vh;
 }
@@ -1143,10 +1053,6 @@ video {
   width: 16rem;
 }
 
-.w-\[88\%\] {
-  width: 88%;
-}
-
 .w-auto {
   width: auto;
 }
@@ -1157,10 +1063,6 @@ video {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-2 {
-  width: 0.5rem;
 }
 
 .min-w-32 {
